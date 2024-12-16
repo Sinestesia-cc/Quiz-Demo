@@ -1,0 +1,70 @@
+/* General */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor para Three.js */
+#container {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Contenedor del Quiz */
+#quiz {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#question {
+    color: white;
+    font-size: 1.5em;
+}
+
+#answers {
+    margin-top: 10px;
+}
+
+#answers button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#answers button:hover {
+    background: #0056b3;
+}
+
+/* Barra negra transparente */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 9px;
+    padding: 6px;
+    z-index: 3;
+}
+
+/* Ocultar barra si se detecta Oculus VR */
+.hidden {
+    display: none !important;
+}
