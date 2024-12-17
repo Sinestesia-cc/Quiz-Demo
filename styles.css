@@ -50,21 +50,3 @@ body {
 #answers button:hover {
     background: #0056b3;
 }
-
-/* Barra negra transparente */
-#footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: white;
-    text-align: center;
-    font-size: 14px;
-    padding: 10px;
-    z-index: 3;
-}
-
-/* Ocultar barra si se detecta Oculus VR */
-.hidden {
-    display: none !important;
-}
